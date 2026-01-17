@@ -6,6 +6,7 @@ cask "char" do
   name "char"
   desc "Word counter tool"
   homepage "https://github.com/851-labs/char"
+  auto_updates true
 
   app "char.app"
 end
