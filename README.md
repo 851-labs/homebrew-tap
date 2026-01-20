@@ -22,11 +22,11 @@ brew install --cask 851-labs/tap/<name>
 
 ### Formulae
 
-- `macrack`
+- [`macrack`](https://github.com/851-labs/macrack)
 
 ### Casks
 
-- `char`
+- [`char`](https://github.com/851-labs/char)
 
 ## Update / Uninstall
 
