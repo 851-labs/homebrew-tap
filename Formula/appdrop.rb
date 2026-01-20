@@ -5,7 +5,7 @@ class Appdrop < Formula
 
   on_arm do
     url "https://github.com/851-labs/appdrop/releases/download/v#{version}/appdrop"
-    sha256 "TODO"
+    sha256 "71a4a70aaf570d5e497dc95f1c3d76402082cbc984b33668973fd8e883dec485"
   end
 
   def install
