@@ -1,11 +1,11 @@
 class Appdrop < Formula
   desc "Zero-config macOS release CLI for building, signing, and notarizing apps"
   homepage "https://github.com/851-labs/appdrop"
-  version "0.1.1"
+  version "0.1.2"
 
   on_arm do
     url "https://github.com/851-labs/appdrop/releases/download/v#{version}/appdrop"
-    sha256 "2ae2735c1b185ccb57e0f5818637b1da1d6400be976a6aafa84aa02c9a2a0e1e"
+    sha256 "3959e84fdda05ab26dc5e6ef9720b4ac678fa3638ffbc49c0591526d7c94a411"
   end
 
   def install
