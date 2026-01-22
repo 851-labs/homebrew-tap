@@ -1,6 +1,6 @@
 cask "char" do
-  version "1.0.32"
-  sha256 "faac5ba88a5d37782e688cf4f48e67fd82c9ad0c777d05befdca6042e195a647"
+  version "1.0.33"
+  sha256 "21d58bfb0457d6eaa5f7925856435f4f9b8cf73d7fe0fcb9a6cbd9e30b62e194"
 
   url "https://github.com/851-labs/char/releases/download/v#{version}/char.dmg"
   name "char"
