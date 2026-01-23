@@ -1,6 +1,6 @@
 cask "char" do
-  version "1.0.56"
-  sha256 "6b0c214c248b24838755fc48e1c3ae249ae8c89e6806e18580bccbb3a484551c"
+  version "1.0.57"
+  sha256 "26d54edba5625a344c7741def54f700415c1ae8e2f33d4c5e7773ff8c551c04e"
 
   url "https://github.com/851-labs/Char/releases/download/v#{version}/char.dmg"
   name "Char"
@@ -8,5 +8,5 @@ cask "char" do
   homepage "https://github.com/851-labs/Char"
   auto_updates true
 
-  app "char.app"
+  app "Char.app"
 end
