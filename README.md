@@ -27,6 +27,7 @@ brew install --cask 851-labs/tap/<name>
 ### Casks
 
 - [`char`](https://github.com/851-labs/char)
+- [`window-in-picture`](https://github.com/851-labs/Window-in-Picture)
 
 ## Update / Uninstall
 
