@@ -1,16 +1,16 @@
 class Macrack < Formula
   desc "Keep your Mac server-ready"
   homepage "https://github.com/851-labs/macrack"
-  url "https://github.com/851-labs/macrack/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "61e18a7f3452f7f90bfa3487308a619b9013fd53297ee943247f48645b8c1af3"
+  version "1.0.4"
   license "MIT"
 
+  url "https://github.com/851-labs/macrack/releases/download/v#{version}/macrack"
+  sha256 "ed8cfa0abedb9c0c59c25d72694358e984a481f177e1df68d8026e1ada656b16"
+
   depends_on macos: :ventura
-  depends_on xcode: ["15.0", :build]
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/macrack"
+    bin.install "macrack"
   end
 
   service do
