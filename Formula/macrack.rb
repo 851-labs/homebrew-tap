@@ -1,11 +1,11 @@
 class Macrack < Formula
   desc "Keep your Mac server-ready"
   homepage "https://github.com/851-labs/macrack"
-  version "1.0.4"
+  version "1.0.10"
   license "MIT"
 
   url "https://github.com/851-labs/macrack/releases/download/v#{version}/macrack"
-  sha256 "ed8cfa0abedb9c0c59c25d72694358e984a481f177e1df68d8026e1ada656b16"
+  sha256 "cf8a6e28d309cf8a8ab521e827903518a6e80dfc8aadb368b70cabb67ffe258a"
 
   depends_on macos: :ventura
 
