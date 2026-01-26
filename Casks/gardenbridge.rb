@@ -1,6 +1,6 @@
 cask "gardenbridge" do
-  version "1.0.0"
-  sha256 "b4d9b40e3446f317bca5526273a90f60ec1674e767920e660b94312404dd72c5"
+  version "1.0.1"
+  sha256 "9e8d573b3926dc1a0be39d6c41b34ca392a7fd0373e4f5fe1d280ae1d0c6c0af"
 
   url "https://github.com/851-labs/GardenBridge/releases/download/v#{version}/GardenBridge.dmg"
   name "GardenBridge"
