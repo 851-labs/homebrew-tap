@@ -22,11 +22,13 @@ brew install --cask 851-labs/tap/<name>
 
 ### Formulae
 
+- [`appdrop`](https://github.com/851-labs/appdrop)
 - [`macrack`](https://github.com/851-labs/macrack)
 
 ### Casks
 
 - [`char`](https://github.com/851-labs/char)
+- [`gardenbridge`](https://github.com/851-labs/GardenBridge)
 - [`window-in-picture`](https://github.com/851-labs/Window-in-Picture)
 
 ## Update / Uninstall
