@@ -1,6 +1,6 @@
 cask "window-in-picture" do
-  version "1.0.29"
-  sha256 "7f49488b4e534e208fb395652e2f6cec8713245094cb68dab1062ef57caf9e97"
+  version "1.0.30"
+  sha256 "eb783a92e49fe6a74740619499f47417b333db562e06e50696c5ccba13fcf8f4"
 
   url "https://github.com/851-labs/Window-in-Picture/releases/download/v#{version}/Window-in-Picture.dmg"
   name "Window-in-Picture"
