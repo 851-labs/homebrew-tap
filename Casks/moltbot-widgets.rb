@@ -1,6 +1,6 @@
 cask "moltbot-widgets" do
-  version "0.2.0"
-  sha256 "1ead46ff7d68515dcb91053c9ab2cf165213969ad8fceea9442f6e92ef928639"
+  version "0.2.1"
+  sha256 "31c0fe150b4f4a4de3c61d4ba84fd500f86c5f87ba8ebcc162be7ad9816e2d0f"
 
   url "https://github.com/851-labs/MoltbotWidgets/releases/download/v#{version}/MoltbotWidgets.dmg"
   name "Moltbot Widgets"
@@ -8,6 +8,7 @@ cask "moltbot-widgets" do
   homepage "https://github.com/851-labs/MoltbotWidgets"
 
   app "MoltbotWidgets.app"
+  binary "#{appdir}/MoltbotWidgets.app/Contents/Resources/moltbot-widgets"
 
   postflight do
     system_command "/usr/bin/pluginkit",
