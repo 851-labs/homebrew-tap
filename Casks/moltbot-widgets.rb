@@ -7,5 +7,5 @@ cask "moltbot-widgets" do
   desc "macOS desktop widgets for monitoring your Moltbot gateway"
   homepage "https://github.com/851-labs/MoltbotWidgets"
 
-  app "Moltbot Widgets.app"
+  app "MoltbotWidgets.app"
 end
