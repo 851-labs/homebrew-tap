@@ -1,6 +1,6 @@
 cask "moltbot-widgets" do
-  version "0.1.0"
-  sha256 "efe44b6c1ee96c731e9703fa7ec3044869aeec5979f7dd991727d935422fc66f"
+  version "0.1.1"
+  sha256 "3b39a174433686510b49b34533439ae99dad34992dc6b68a310b4b03f27b5b80"
 
   url "https://github.com/851-labs/MoltbotWidgets/releases/download/v#{version}/MoltbotWidgets.dmg"
   name "Moltbot Widgets"
@@ -8,4 +8,10 @@ cask "moltbot-widgets" do
   homepage "https://github.com/851-labs/MoltbotWidgets"
 
   app "MoltbotWidgets.app"
+
+  postflight do
+    system_command "/usr/bin/pluginkit",
+                   args: ["-a", "#{appdir}/MoltbotWidgets.app/Contents/PlugIns/MoltbotWidgetsExtension.appex"],
+                   sudo: false
+  end
 end
