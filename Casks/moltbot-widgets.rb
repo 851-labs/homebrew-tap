@@ -1,6 +1,6 @@
 cask "moltbot-widgets" do
-  version "0.2.2"
-  sha256 "e0148d3e39ffd355b966beb79cf9775c5c494d403c84b0193678c7f7e126857b"
+  version "0.2.3"
+  sha256 "85b721c115d469e0f3fdacaa45fa8de67b6cf17ac910dc7a8bf8e08e0dfde2ef"
 
   url "https://github.com/851-labs/MoltbotWidgets/releases/download/v#{version}/MoltbotWidgets.dmg"
   name "Moltbot Widgets"
