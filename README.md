@@ -24,6 +24,7 @@ brew install --cask 851-labs/tap/<name>
 
 - [`appdrop`](https://github.com/851-labs/appdrop)
 - [`macrack`](https://github.com/851-labs/macrack)
+- [`snake`](https://github.com/851-labs/snake)
 
 ### Casks
 
