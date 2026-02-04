@@ -1,30 +1,30 @@
 class Auger < Formula
   desc "Self-hosted HTTP tunnel"
   homepage "https://github.com/851-labs/auger"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/851-labs/auger/releases/download/v#{version}/auger-darwin-x64.tar.gz"
-      sha256 "e9ad127c2c3020212118ab4681e8fa8d7da91892b94355f0a5bd1424f8b217af"
+      sha256 "f0ff987d7cff9a493946ba9106a464000e561752405960a3723cedc1ccfab080"
     end
 
     on_arm do
       url "https://github.com/851-labs/auger/releases/download/v#{version}/auger-darwin-arm64.tar.gz"
-      sha256 "bde1be503508e19755e7c04469b82a33035cea5eabc66098cc6711ad0b8dc60a"
+      sha256 "d93f7d35beb1323f570f0ccd8c7e7beb84c0469daaeac7717bbe2f5f7644a4e6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/851-labs/auger/releases/download/v#{version}/auger-linux-x64.tar.gz"
-      sha256 "d01a8243fb7c7fbf8489177bb707b1d7c4ccac03548e7d6a2d29a082a8cb25d5"
+      sha256 "c2d28294136f5fd3c58edc69f10efed121c63fb05ee8b8d10cdb6834c12293b2"
     end
 
     on_arm do
       url "https://github.com/851-labs/auger/releases/download/v#{version}/auger-linux-arm64.tar.gz"
-      sha256 "d8405ecf966855840a8b17fd9bd92b1a012eb00ae0dd135c4e8e4847f495eadc"
+      sha256 "0f1f2e06dc6dcb313c9048ed77a3dead644afbc120242f61bf07d0961733293f"
     end
   end
 
