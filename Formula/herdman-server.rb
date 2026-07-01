@@ -1,19 +1,17 @@
 class HerdmanServer < Formula
   desc "Local and remote HerdMan ACP server"
   homepage "https://github.com/851-labs/herdman"
-  version "0.1.7"
+  version "0.1.8"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/herdman-server-darwin-arm64.tar.gz"
-    sha256 "5778fb67982551f2a81da912b1a7cea55b25ec315f12c854f5de19f7d73b54bc"
+    sha256 "e94fe4239e680dba53639d3d18e6358dcda9e97af0422d1e0964c674b3af67c4"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/herdman-server-linux-x64.tar.gz"
-    sha256 "19558a56f78783720554827511196a758c3956519452ede020f90753a975771a"
+    sha256 "2e94dd882f5a35638d6248ce380c802a0c54acf64834401183282d032587265b"
   else
     odie "No HerdMan server archive is available for this platform. Supported targets: darwin-arm64, linux-x64"
   end
-
-  depends_on "node"
 
   def install
     libexec.install Dir["*"]
