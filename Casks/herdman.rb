@@ -1,6 +1,6 @@
 cask "herdman" do
-  version "0.1.30"
-  sha256 "13eaf1b03bf0eb6d662f2142a66b8e0eb49795927c099c61c234d6ca430ec9e7"
+  version "0.1.31"
+  sha256 "fdf0e13a22b6946a42c7b99c5273107ecd005cb9b5aaa2e70cc1983777804853"
 
   url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/HerdMan-macOS.zip"
   name "HerdMan"
