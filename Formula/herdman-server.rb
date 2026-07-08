@@ -1,17 +1,17 @@
 class HerdmanServer < Formula
   desc "Local and remote HerdMan ACP server"
   homepage "https://github.com/851-labs/herdman"
-  version "0.1.35"
+  version "0.1.36"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/herdman-server-darwin-arm64.tar.gz"
-    sha256 "30b1902aad466d3da07e52c639f79712539edb5f3930e81ef3488f95c6397b63"
+    sha256 "894f9c0216e946b1ff0ca2d616071a2b07e11c020218600f3444b7008696e1bd"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/herdman-server-darwin-x64.tar.gz"
-    sha256 "c03c29aad28a8aee1ce0ea17057b475a248708d76613eebe84e6d8c68112deef"
+    sha256 "d55e6b025a24f2e98c9bf736ceb9cdab547fb68ea73dcca74fe5d29cadb3f24d"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/herdman-server-linux-x64.tar.gz"
-    sha256 "b259c3bef730bfe168b73de717d2e396a0f4a7d159483fe2f8e4cdce253d3b50"
+    sha256 "0edd96059f489c6efe5d7ebdebd78fdd0138f2cc77c2c0b3a873b28557c64130"
   else
     odie "No HerdMan server archive is available for this platform. Supported targets: darwin-arm64, darwin-x64, linux-x64"
   end
