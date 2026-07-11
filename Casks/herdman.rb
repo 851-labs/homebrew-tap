@@ -1,11 +1,11 @@
 cask "herdman" do
-  version "0.1.41"
-  sha256 "a8be30fc75aaf50aacdc771e7bc7bafe0a8cff93a10ab8e6969477844baa1522"
+  version "0.1.42"
+  sha256 "03bdb223bf834626847649a5d92ad5027515acfabb856eb63c4280d1125eab33"
 
   url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/HerdMan-macOS.zip"
   name "HerdMan"
   desc "ACP chat client and local HerdMan server"
-  homepage "https://github.com/851-labs/herdman"
+  homepage "https://github.com/851-labs/codevisor"
 
   # The app also updates itself in place, so only explicit `brew upgrade`
   # (or --greedy) should touch it.
