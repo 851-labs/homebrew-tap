@@ -1,6 +1,6 @@
 cask "codevisor" do
-  version "0.1.49"
-  sha256 "8714f891904d45059c8cd2f2181990d8b21c841797b603455a52522457856960"
+  version "0.1.50"
+  sha256 "3a1af4f669a89df4b95c14335ad22ac74a597f8234bfd547c94b7c7e5045a649"
 
   url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/Codevisor-macOS.zip"
   name "Codevisor"
