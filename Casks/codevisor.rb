@@ -1,17 +1,17 @@
-cask "herdman" do
-  version "0.1.46"
-  sha256 "f69f1ab885d59cd7d2560b36b2bec8accad489852020eb1f8ddfa33036f2d68d"
+cask "codevisor" do
+  version "0.1.48"
+  sha256 "bff37ba9b769cd96a81f52434eeff2dd2cbdeb201ae498eb0d8cb2320779f414"
 
-  url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/herdman/v#{version}/HerdMan-macOS.zip"
-  name "HerdMan"
-  desc "ACP chat client and local HerdMan server"
+  url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/Codevisor-macOS.zip"
+  name "Codevisor"
+  desc "ACP chat client and local Codevisor server"
   homepage "https://github.com/851-labs/codevisor"
 
   # The app also updates itself in place, so only explicit `brew upgrade`
   # (or --greedy) should touch it.
   auto_updates true
 
-  app "HerdMan.app"
+  app "Codevisor.app"
 
   # Quit a running app before the bundle is swapped. The preflight covers
   # upgrades from cask versions that predate the uninstall stanza; the guard
@@ -32,7 +32,7 @@ cask "herdman" do
   # current app (which in turn restarts an outdated local server on launch).
   postflight do
     system_command "/usr/bin/open",
-                   args: ["-a", "#{appdir}/HerdMan.app"],
+                   args: ["-a", "#{appdir}/Codevisor.app"],
                    must_succeed: false
   end
 end
