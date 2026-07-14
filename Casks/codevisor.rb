@@ -1,6 +1,6 @@
 cask "codevisor" do
-  version "0.1.48"
-  sha256 "bff37ba9b769cd96a81f52434eeff2dd2cbdeb201ae498eb0d8cb2320779f414"
+  version "0.1.49"
+  sha256 "8714f891904d45059c8cd2f2181990d8b21c841797b603455a52522457856960"
 
   url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/Codevisor-macOS.zip"
   name "Codevisor"
@@ -24,6 +24,8 @@ cask "codevisor" do
                      'tell application id "com.851labs.HerdMan" to quit'
                    ],
                    must_succeed: false
+    system_command "/bin/rm",
+                   args: ["-rf", "#{appdir}/HerdMan.app"]
   end
 
   uninstall quit: "com.851labs.HerdMan"
