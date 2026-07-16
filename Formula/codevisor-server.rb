@@ -1,17 +1,17 @@
 class CodevisorServer < Formula
   desc "Local and remote Codevisor ACP server"
   homepage "https://github.com/851-labs/codevisor"
-  version "0.1.67"
+  version "0.1.68"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-darwin-arm64.tar.gz"
-    sha256 "f94c48597fe3a5839dcb0e6d9b0133454bda1020f8db05fdd0a73c6f5cdeea1c"
+    sha256 "f57a42424d9880ebcca37aeb1bbf726190d056174cb0ecb83327e2183977e397"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-darwin-x64.tar.gz"
-    sha256 "bdf08ebb45bfa7525e5832cbcfb9b500573680ca97a45deb47b034ed00a6ea1b"
+    sha256 "5af9e3df003786cb39114c8fc171145bd7dd2e8e4a8a8747684b610685d629a9"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-linux-x64.tar.gz"
-    sha256 "0e7d7feee81520f680baa72912c5a3176bc2ed89092520bb56cb0919719c0aed"
+    sha256 "c9ecb9c7fd8d10e0c03a1e82cd59cb752649c2d10648ba73cf1a03a9dd8de180"
   else
     odie "No Codevisor server archive is available for this platform. Supported targets: darwin-arm64, darwin-x64, linux-x64"
   end
