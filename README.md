@@ -22,12 +22,14 @@ brew install --cask 851-labs/tap/<name>
 
 ### Formulae
 
+- [`codevisor-server`](https://github.com/851-labs/codevisor)
 - [`macrack`](https://github.com/851-labs/macrack)
 - [`snake`](https://github.com/851-labs/snake)
 
 ### Casks
 
 - [`char`](https://github.com/851-labs/char)
+- [`codevisor`](https://github.com/851-labs/codevisor)
 - [`window-in-picture`](https://github.com/851-labs/Window-in-Picture)
 
 ## Update / Uninstall
