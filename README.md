@@ -25,6 +25,7 @@ brew install --cask 851-labs/tap/<name>
 - [`codevisor-server`](https://github.com/851-labs/codevisor)
 - [`macrack`](https://github.com/851-labs/macrack)
 - [`snake`](https://github.com/851-labs/snake)
+- [`yesvnc`](https://github.com/851-labs/yesVNC)
 
 ### Casks
 
