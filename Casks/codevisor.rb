@@ -1,11 +1,11 @@
 cask "codevisor" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.90"
-  sha256 arm:   "3e9518dec7c03d038b28f700a2df2972c9a779d7783330d0ef10dfeb35791594",
-         intel: "f8955c89c7d64c12b7cc74af3a41f583a79470154b1438cf4b4841dde07d378e"
+  version "0.1.91"
+  sha256 arm:   "0279f6cfb9323f0082bf44ab03d0e5167cc30ada725c25749a7746621bbbe45e",
+         intel: "99ddbc286cdf0929c32e1e81d739e872c1907eee0685957e7e36dd5e3c0aeb4e"
 
-  url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/Codevisor-macOS-#{arch}.zip"
+  url "https://github.com/851-labs/codevisor/releases/download/v#{version}/Codevisor-macOS-#{arch}.zip"
   name "Codevisor"
   desc "ACP chat client and local Codevisor server"
   homepage "https://github.com/851-labs/codevisor"

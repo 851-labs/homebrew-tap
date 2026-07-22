@@ -1,19 +1,22 @@
 class CodevisorServer < Formula
   desc "Local and remote Codevisor ACP server"
   homepage "https://github.com/851-labs/codevisor"
-  version "0.1.90"
+  version "0.1.91"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-darwin-arm64.tar.gz"
-    sha256 "d4633cf29e024e25ebe5b1a562a6a857fd8b6b3a641d14f644db3005cff2d03b"
+    url "https://github.com/851-labs/codevisor/releases/download/v#{version}/codevisor-server-darwin-arm64.tar.gz"
+    sha256 "c3793b1199f32acccdb6f41ee34f773741cc3c97158b974f5e09ccdf7b23851b"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-darwin-x64.tar.gz"
-    sha256 "3cf55c04a46f70e37c7e56e700bc6f4752fce848c2a3492bf4c5e6882481d1d1"
+    url "https://github.com/851-labs/codevisor/releases/download/v#{version}/codevisor-server-darwin-x64.tar.gz"
+    sha256 "7c246e044f7f91b5ea6d0d2ce2d0b3292471f8d380de531180f11bb2277eca9b"
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/851-labs/codevisor/releases/download/v#{version}/codevisor-server-linux-arm64.tar.gz"
+    sha256 "d27f4fbc52a20f4c16a432b81e881cf85a7f627ccc4948e6268447c613f4a7d8"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://pub-d2d6eb72b71c4986a742c0527774c9f0.r2.dev/releases/codevisor/v#{version}/codevisor-server-linux-x64.tar.gz"
-    sha256 "1537f735405ccbd3310bf4ccc09f262b853b44d1c9f00581323f0023f4fa199e"
+    url "https://github.com/851-labs/codevisor/releases/download/v#{version}/codevisor-server-linux-x64.tar.gz"
+    sha256 "375947bcf00efe87e97d37f28b8fbbfa5e64a7fba4da9f7f57262694f273c309"
   else
-    odie "No Codevisor server archive is available for this platform. Supported targets: darwin-arm64, darwin-x64, linux-x64"
+    odie "No Codevisor server archive is available for this platform. Supported targets: darwin-arm64, darwin-x64, linux-arm64, linux-x64"
   end
 
   def install
