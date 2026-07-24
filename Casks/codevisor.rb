@@ -1,9 +1,9 @@
 cask "codevisor" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.95"
-  sha256 arm:   "10c1ffb1e6b20c5259dcbe1ec6d6d338460c8012c0d30d8b6993eefe9333ff1e",
-         intel: "48c80728caf1c169481687e3d8ac5a05a340107968fab9ee7124b59a3e5b636d"
+  version "0.1.96"
+  sha256 arm:   "dfbb95ee14038dbd75a9b6abb483728127ee9daebe0ad9bda633f12f1bf5ada3",
+         intel: "1c8e2fb03b084c9aeebc8e79dbfd2a9524e97b9af5b23769ffb21fcc59e7d776"
 
   url "https://github.com/851-labs/codevisor/releases/download/v#{version}/Codevisor-macOS-#{arch}.zip"
   name "Codevisor"
