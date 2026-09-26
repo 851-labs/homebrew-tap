@@ -1,14 +1,15 @@
 cask "codevisor" do
-  arch arm: "arm64", intel: "x64"
+  version "0.1.102"
+  sha256 "81bf7cb2a2d1225037bd14c356fadce9d72f2bd3c6e09a5613935cc6276f16d8"
 
-  version "0.1.101"
-  sha256 arm:   "a06141cd81a7dc20662263cf8f0ddac8bed5df17586524d7930afe253156e28d",
-         intel: "e6c50deaa63b2c9e76ae83de449b6ac7f1fe8c2bf80d7defe8ad27b2f8df7f1f"
-
-  url "https://github.com/851-labs/codevisor/releases/download/v#{version}/Codevisor-macOS-#{arch}.zip"
+  url "https://github.com/851-labs/codevisor/releases/download/v#{version}/Codevisor-macOS-arm64.zip"
   name "Codevisor"
   desc "ACP chat client and local Codevisor server"
   homepage "https://github.com/851-labs/codevisor"
+
+  # The app ships for Apple silicon only. Intel Macs can still run the
+  # standalone server: brew install 851-labs/tap/codevisor-server
+  depends_on arch: :arm64
 
   # The app also updates itself in place, so only explicit `brew upgrade`
   # (or --greedy) should touch it.
@@ -21,9 +22,9 @@ cask "codevisor" do
   # install. The launchers resolve symlinks before locating the runtime root,
   # so linking straight into the installed bundle is safe, and in-place app
   # updates keep the links valid.
-  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-#{arch}/bin/codevisor"
-  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-#{arch}/bin/codevisor-server"
-  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-#{arch}/bin/codevisor-terminal-proxy"
+  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-arm64/bin/codevisor"
+  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-arm64/bin/codevisor-server"
+  binary "#{appdir}/Codevisor.app/Contents/Resources/server/darwin-arm64/bin/codevisor-terminal-proxy"
 
   # The codevisor-server formula links the same launcher names; installing
   # both would collide in $HOMEBREW_PREFIX/bin.
