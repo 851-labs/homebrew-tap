@@ -1,10 +1,9 @@
 cask "lil-passwords" do
+  # `version`/`sha256` are kept in sync with GitHub Releases automatically —
+  # 851-labs/lil-passwords's release workflow rewrites both after every
+  # publish (its "Bump Homebrew cask" step, see docs/releasing.md there).
+  # The values below are a placeholder as of 851-2438: no release exists yet.
   version "0.1.0"
-  # Placeholder until v0.1.0 is actually released (851-2438) — no DMG exists
-  # at this URL yet, so this can't be a real sha256. The release workflow's
-  # cask-bump step (851-labs/lil-passwords .github/workflows/release.yml)
-  # overwrites both `version` and `sha256` after every publish; see
-  # docs/releasing.md there for how.
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
   url "https://github.com/851-labs/lil-passwords/releases/download/v#{version}/LilPasswords-#{version}.dmg"
