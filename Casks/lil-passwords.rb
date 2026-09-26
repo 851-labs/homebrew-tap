@@ -24,10 +24,9 @@ cask "lil-passwords" do
   depends_on macos: :ventura
 
   app "lil passwords.app"
-  # The CLI binary embedded in the app is named `lilpass`
-  # (Contents/Helpers/lilpass), but 851-2438 links it onto PATH under the
-  # shorter `lilpw` command name.
-  binary "#{appdir}/lil passwords.app/Contents/Helpers/lilpass", target: "lilpw"
+  # The CLI binary is embedded in the app as Contents/Helpers/lilpass and
+  # links onto PATH under that same name.
+  binary "#{appdir}/lil passwords.app/Contents/Helpers/lilpass"
 
   zap trash: [
     "~/Library/Application Support/lil passwords",
