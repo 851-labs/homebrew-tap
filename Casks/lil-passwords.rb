@@ -41,14 +41,4 @@ cask "lil-passwords" do
   #   security delete-generic-password -s com.851labs.lilpasswords.vaultkey
   # or via Keychain Access, search "lilpasswords".
 
-  caveats do
-    <<~EOS
-      lil passwords isn't notarized yet (851-2436 in the main repo) — every
-      release today is ad hoc signed. macOS will refuse to open it on first
-      launch; either right-click the app in Applications and choose Open, or
-      clear the quarantine flag yourself:
-        xattr -d com.apple.quarantine "#{appdir}/lil passwords.app"
-      This step goes away once Developer ID signing and notarization land.
-    EOS
-  end
 end
