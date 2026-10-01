@@ -40,5 +40,4 @@ cask "lil-passwords" do
   # items, so this is left as a manual step for anyone who wants it gone:
   #   security delete-generic-password -s com.851labs.lilpasswords.vaultkey
   # or via Keychain Access, search "lilpasswords".
-
 end
